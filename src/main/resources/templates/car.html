@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>THYMELEAF</title>
@@ -7,5 +7,9 @@
 <body>
 <hi>KURS THYMELEAF</hi>
 <p>Hello world!</p>
+<p th:text="${name}"></p>
+
+<p th:text="${car.getMark()}"></p>
+<p th:text="${car.getModel()}"></p>
 </body>
 </html>
